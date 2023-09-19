@@ -1,0 +1,16 @@
+h3{
+  color: white;
+  text-decoration: underline;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5%;
+}
+
+ul{
+  list-style:circle;
+  color: white;
+ }

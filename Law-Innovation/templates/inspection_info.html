@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block stylesheet %}  <link rel="stylesheet" href="/static/inspection_info.css"> {% endblock %}
+{% block title %} Inspection ID Information {% endblock %}
+{% block content %}
+<!-- Page content-->
+<body>
+    <style>
+    
+    </style>
+        <div class="container">
+            <div class="main-content">
+                <h3> Program Area </h3>
+                <ul>
+                 {% for area in data[5] %}
+                <li>{{area}}</li>
+                {% endfor %}
+                </ul>
+
+                <h3>Short Description</h3>
+                <ul>
+                {% for short_desc in data[7] %}
+                <li>{{short_desc}}</li>
+                {% endfor %}
+                </ul>
+
+                <h3>Long Description</h3>
+                <ul>
+                {% for long_desc in data[8] %}
+                <li >{{long_desc}}</li>
+                {% endfor %}
+                </ul>
+                
+            </div>
+        </div>
+    </body>
+{% endblock %}
+    
